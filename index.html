@@ -1,0 +1,64 @@
+<html>
+	
+	<meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+	<title>CSS-Process-Bar</title>
+
+	<script src = "js/processbar.js"></script>
+
+	<head>
+		<style>
+			
+			html,body{
+				height: 100%;
+				width: 100%;
+				padding: 0px;
+				margin: 0px;
+			}
+
+			body{
+				position: relative;
+				background-color: #515151;
+			}
+
+			#dialog-box{
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				margin: auto;
+				width: 480px;
+				height: 360px;
+				background-color: #FFF;
+			}
+
+			.process-bar-wrap{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 4px;
+				background: #DDD;
+			}
+
+			.process-bar-fill{
+				width: 1%;
+				height: 100%;
+				background: #BD4599;
+				transition: width ease-in-out 0.5s;
+				font-size: 16px;
+				text-align: center;
+				color: #FFF;
+				font-family: helvetica;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		
+		<div id="dialog-box"></div>
+
+	</body>
+
+</html>
